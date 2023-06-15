@@ -27,7 +27,7 @@ header h1 {
 .banner {
   width: 100%;
   height: 0;
-  padding-bottom: 25%; /* Ajuste essa porcentagem de acordo com a proporção da imagem */
+  padding-bottom: 25%; /*  proporção da imagem */
   position: relative;
   overflow: hidden;
 }
@@ -73,7 +73,7 @@ nav ul li a {
 .faq-container {
   display: flex;
   justify-content: center;
-  padding: 0 20px; /* Adicione o valor desejado para o espaço nas laterais */
+  padding: 0 20px; /*  espaço nas laterais */
 }
 
 .faq-content {
@@ -83,7 +83,7 @@ nav ul li a {
 }
 section.faq {
   text-align: justify;
-  margin-bottom: 50px; /* Adicione uma margem inferior */
+  margin-bottom: 50px; /* margem inferior */
 }
 
 
@@ -130,7 +130,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px; /* Adicione um espaçamento inferior para o footer */
+  margin-bottom: 100px; /*espaçamento inferior para o footer */
 }
 
 .content {
@@ -161,30 +161,29 @@ footer {
   margin-bottom: 0;
 }
 
-/* Media queries para tornar o site responsivo */
+
 /* Responsividade */
 /* 320px */
 @media screen and (max-width: 320px) {
   /* Estilos específicos para telas de até 320px de largura */
-  /* ... */
+
 }
 
 /* 768px */
 @media screen and (min-width: 321px) and (max-width: 768px) {
   /* Estilos específicos para telas entre 321px e 768px de largura */
-  /* ... */
+  
 }
 
 /* 1366px */
 @media screen and (min-width: 769px) and (max-width: 1366px) {
   /* Estilos específicos para telas entre 769px e 1366px de largura */
-  /* ... */
 }
 
 /* Acima de 1366px */
 @media screen and (min-width: 1367px) {
   /* Estilos específicos para telas maiores que 1366px de largura */
-  /* ... */
+
 }
 
 @media (max-width: 768px) {
