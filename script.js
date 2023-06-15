@@ -25,3 +25,46 @@ function startCarousel() {
 }
 
 startCarousel();
+
+const form = document.getElementById('cadastro-form');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  if (validateForm()) {
+    form.submit();
+  }
+});
+
+function validateForm() {
+  const nomeInput = document.getElementById('nome');
+  const emailInput = document.getElementById('email');
+  const telefoneInput = document.getElementById('telefone');
+
+  if (nomeInput.value === '') {
+    alert('Por favor, preencha o campo Nome.');
+    nomeInput.focus();
+    return false;
+  }
+
+  if (emailInput.value === '') {
+    alert('Por favor, preencha o campo E-mail.');
+    emailInput.focus();
+    return false;
+  }
+
+  if (telefoneInput.value === '') {
+    alert('Por favor, preencha o campo Telefone.');
+    telefoneInput.focus();
+    return false;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailInput.value)) {
+    alert('Por favor, insira um endereço de e-mail válido.');
+    emailInput.focus();
+    return false;
+  }
+
+  return true;
+}
